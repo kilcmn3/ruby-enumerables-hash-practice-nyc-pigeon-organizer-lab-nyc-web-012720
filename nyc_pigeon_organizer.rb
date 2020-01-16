@@ -19,6 +19,8 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   name_pigeon = data[:gender][:male] + data[:gender][:female]
   pigeon_list =  Hash.new
+  pp pigeon_list
+  puts "break!!!!!!!!!!!!!!!@"
   keys_collect = Hash[data.collect{|key, value| [key, 0]}]
 
   i = 0
