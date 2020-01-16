@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
         keys_collect = Hash[data.collect{|key, value| [key, value.default = 0]}]
         pigeon_list[name_pigeon[i]] = keys_collect
         pp pigeon_list
-          if pigeon_list[name_pigeon[i]][:color] && == 0
+          if pigeon_list[name_pigeon[i]][:color] == 0
             pigeon_list[name_pigeon[i]][:color] = search_in_list(name_pigeon[i], data[:color])
           end
           i += 1
