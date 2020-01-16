@@ -31,7 +31,7 @@ def search_in_list(name_pigeon, category_pigeon)
               nil
             end
   end
-  new_array
+pp  new_array
 end
 
  search_in_list("Alex", pigeon_data[:color])
