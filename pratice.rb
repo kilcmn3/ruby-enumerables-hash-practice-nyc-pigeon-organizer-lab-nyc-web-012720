@@ -35,16 +35,3 @@ def search_in_list(name_pigeon, category_pigeon)
 end
 
  search_in_list("Theo", pigeon_data[:color])
-
-
-
-
-
- def find_keys(list)
-
-   hash_j = Hash[list.collect{|key, value| [key, ""]}]
-   pp hash_j
- end
-
-
- find_keys(pigeon_data)
