@@ -24,8 +24,7 @@ def search_in_list(name_pigeon, category_pigeon)
   new_hash = {}
   category_pigeon.each do |key, value|
       if value.include?(name_pigeon) == true
-          pp key
-          pp value
+
               s = "#{key}"
               new_array.push(s)
             else
