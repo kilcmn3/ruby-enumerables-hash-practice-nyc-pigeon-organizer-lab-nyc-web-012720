@@ -28,7 +28,6 @@ def search_in_list(name_pigeon, category_pigeon)
           pp value
               s = "#{key}"
               new_array.push(s)
-              pp new_array
             else
               nil
             end
