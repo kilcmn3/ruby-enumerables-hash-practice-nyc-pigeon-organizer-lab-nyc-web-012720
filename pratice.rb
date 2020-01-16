@@ -35,5 +35,7 @@ def search_in_list(name_pigeon, category_pigeon)
   end
   new_array
 end
+search_in_list("Alex", pigeon_data[:color])
  search_in_list("Theo", pigeon_data[:color])
  search_in_list("Peter Jr.", pigeon_data[:color])
+ search_in_list("Andrew", pigeon_data[:color])
