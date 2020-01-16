@@ -26,7 +26,6 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name_pigeon[i]] = keys_collect
           if pigeon_list[name_pigeon[i]].has_value?(0) == true
             pigeon_list[name_pigeon[i]][:color] = search_in_list(name_pigeon[i], data[:color])
-          elsif pigeon_list[name_pigeon[i]].has_value?(0) == false
           end
           i += 1
           pp pigeon_list
