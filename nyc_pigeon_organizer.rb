@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
   i = 0
       while i < name_pigeon.length do
         pigeon_list[name_pigeon[i]] = keys_collect
-          if pigeon_list[name_pigeon[i]][:color].has_value?(0) == true
+          if pigeon_list[name_pigeon[i]][:color] == 0
             pigeon_list[name_pigeon[i]][:color] = search_in_list(name_pigeon[i], data[:color])
             end
           i += 1
