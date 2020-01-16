@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
       while i < name_pigeon.length do
         keys_collect = Hash[data.collect{|key, value| [key, value.default = 0]}]
         pigeon_list[name_pigeon[i]] = keys_collect
-          if pigeon_list[name_pigeon[i]][:color] && pigeon_list[name_pigeon[i]][:gender] && pigeon_list[name_pigeon[i]][:lives]
+          if pigeon_list[name_pigeon[i]][:color] && pigeon_list[name_pigeon[i]][:gender] && pigeon_list[name_pigeon[i]][:lives] == 0
             pigeon_list[name_pigeon[i]][:gender] = search_in_list(name_pigeon[i], data[:gender])
             pigeon_list[name_pigeon[i]][:gender] = search_in_list(name_pigeon[i], data[:gender])
               pigeon_list[name_pigeon[i]][:lives] = search_in_list(name_pigeon[i], data[:lives])
