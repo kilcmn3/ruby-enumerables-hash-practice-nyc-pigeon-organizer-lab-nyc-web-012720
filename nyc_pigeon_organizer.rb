@@ -19,9 +19,9 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   name_pigeon = data[:gender][:male] + data[:gender][:female]
   pigeon_list =  Hash.new
-  keys_collect = Hash[data.collect{|key, value| [key, value.default = 0]}]
   i = 0
       while i < name_pigeon.length do
+        keys_collect = Hash[data.collect{|key, value| [key, value.default = 0]}]
         pigeon_list[name_pigeon[i]] = keys_collect
         pp pigeon_list
           if pigeon_list[name_pigeon[i]][:color] == 0
