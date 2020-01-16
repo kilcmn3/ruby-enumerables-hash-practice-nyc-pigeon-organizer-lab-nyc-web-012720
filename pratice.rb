@@ -24,6 +24,7 @@ def search_in_list(name_pigeon, category_pigeon)
   new_hash = {}
   category_pigeon.each do |key, value|
       if value.include?(name_pigeon) == true
+          pp key
               s = "#{key}"
               new_array.push(s)
 
@@ -34,4 +35,4 @@ def search_in_list(name_pigeon, category_pigeon)
 pp  new_array
 end
 
- search_in_list("Alex", pigeon_data[:color])
+ search_in_list("Peter Jr.", pigeon_data[:color])
